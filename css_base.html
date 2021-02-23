@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS base</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+
+        <div class="test-box">
+            <div class="container">
+
+                <ul class="text-box__list">
+                    <li>
+                        <a href="index.html">Список</a>
+                    </li>
+                    <li>
+                        <a href="css_base.html">CSS base</a>
+                    </li>
+                    <li>
+                        <a href="position.html">Position</a>
+                    </li>
+                </ul>
+
+                <div class="test-box__sizes">test-box__sizes 150px*50px</div>
+                <div class="test-box__sizes2">test-box__sizes2 100%*50px</div>
+                <div class="test-box__sizes3">test-box__sizes3 100vw*50px</div>
+                
+                <div>
+                    <a href="javascript:;" class="btn">test btn sm</a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="btn btn--md">test btn md</a>
+                </div>
+
+                <div class="test-box__rgba">test-box__rgba</div>
+                <div class="test-box__rgba2">test-box__rgba2</div>
+                <div class="test-box__rgba3">test-box__rgba3</div>
+
+                <div class="test-box__margin">test-box__margin</div>
+                <div class="test-box__padding">test-box__padding</div>
+
+                <!-- №1 Наложение границ соседей -->
+                <h1 class="test-box__collapse1">Заголовок</h1>
+                <p class="test-box__collapse2">Абзац текста</p>
+
+                <!-- #2 Вываливание за родительские границы -->
+                <div class="test-box__collapse3">
+                    <p>абзац</p>
+                    <p>абзац</p>
+                    <p>абзац</p>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

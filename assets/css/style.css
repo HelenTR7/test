@@ -1,1 +1,142 @@
-.test {}
+* {
+    box-sizing: content-box;
+    /* Основывается на стандартах CSS, при этом свойства width и height
+     задают ширину и высоту контента и не включают в себя значения отступов, 
+     полей и границ. */
+    box-sizing: padding-box;
+    /* Свойства width и height включают в себя значения полей, 
+    но не отступов (margin) и границ (border)).*/
+    box-sizing: border-box; 
+    /* Свойства width и height включают в себя значения полей и границ,
+     но не отступов (margin).*/
+}
+
+.test-box {
+    padding: 50px 0;
+    background: gray;
+}
+
+.text-box__list {
+    padding: 0 30px;
+}
+
+.text-box__list li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.container {
+    padding: 10px 0;
+    margin: 0 auto; /* расположить блок по центру */
+    max-width: 700px;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.container > div {
+    padding: 5px;
+    color: #fff;
+}
+
+
+/* CSS BASE */
+
+/* height/width */
+/* px/rem/em/%/vw/vh */
+.test-box__sizes {
+    background: red;
+    width: 150px;
+    height: 50px;
+}
+
+.test-box__sizes2 {
+    background: green;
+    width: 100%;
+    height: 50px;
+}
+
+.test-box__sizes3 {
+    background: blue;
+    width: 100vw;
+    height: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn--md {
+    font-size: 20px;
+}
+
+/* name/hex(#fffffff)/rgb/rgba/hsl/hsla */
+.test-box__rgba {
+    background: rgba(0,0,0,0.7);
+}
+
+.test-box__rgba2 {
+    background: rgba(0,0,0,0.5);
+}
+
+.test-box__rgba3 {
+    background: rgba(0,0,0,0.2);
+}
+
+.test-box__margin {
+    background: #000;
+    margin: 30px;
+    margin: 30px 50px;
+    margin: 30px 45px 58px;
+    margin: 30px 45px 58px 60px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.test-box__padding {
+    background: #000;
+    padding: 30px;
+    padding: 30px 50px;
+    padding: 30px 45px 58px;
+    padding: 30px 45px 58px 60px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+/* Схлопывание margin */
+/* №1 Наложение границ соседей */
+.test-box__collapse1 {
+    margin:20px 0;
+}
+
+.test-box__collapse2 {
+    margin:10px 0;
+}
+
+/* #2 Вываливание за родительские границы */
+.test-box__collapse3 {
+    padding: 0!important;
+
+    margin:5px 0;
+}
+
+.test-box__collapse3 p {
+    color: #000;
+    margin:10px 0;
+}
+
+
+/* border/background 
+см http://htmlbook.ru/css
+*/
+
+
+/* POSITION */
+
