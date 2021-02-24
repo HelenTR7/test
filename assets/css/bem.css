@@ -1,0 +1,142 @@
+.badge {
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    white-space: nowrap;
+    margin: 0 0 3px;
+}
+
+.badge--hit {
+    background: green;
+}
+
+.badge--new {
+    background: hotpink;
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    transition: all ease 0.3s;
+}
+
+.btn--primary {
+    color: #fff;
+    border: 1px solid blue;
+    background: blue;
+}
+
+.btn--primary:hover {
+    background: blueviolet;
+    border-color: blueviolet;
+}
+
+.product-item {
+    font-family: sans-serif;
+    color: #333;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 5px 5px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    will-change: box-shadow;
+    transition: all ease 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.product-item__top {
+    display: block;
+    position: relative;
+}
+
+.product-item__img-wrap {
+    display: block;
+    overflow: hidden;
+    height: 190px;
+    margin: 0 0 15px;
+}
+
+.product-item__img {
+    max-width: 100%;
+    will-change: transform;
+    transition: all ease 0.3s;
+}
+
+.product-item__img:hover {
+    transform: scale(1.1);
+}
+
+.product-item__badges {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.product-item__bottom {
+    padding: 0 10px;
+}
+
+.product-item__title {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: inherit;
+    margin: 0 0 15px;
+    will-change: color;
+    transition: color ease 0.3s;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 36px;
+    overflow: hidden;
+}
+
+.product-item__title:hover {
+    color: blueviolet;
+}
+
+.product-item__prices {
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.product-item__price-current {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.product-item__price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-item__buy {
+    text-align: center;
+}
+
+

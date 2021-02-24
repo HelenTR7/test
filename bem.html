@@ -7,6 +7,7 @@
         <title>Index</title>
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/bem.css">
     </head>
     <body>
 
@@ -36,6 +37,30 @@
 
                 <p class="title">#1 БЭМ</p>
                 <p class="link"><a href="https://nicothin.pro/idiomatic-pre-CSS/" target="_blank">Ссылка на статью простым языком</a></p>
+
+                <!-- Пример разметки -->
+
+                <div class="product-item">
+                    <a href="#" class="product-item__top">
+                        <span class="product-item__img-wrap">
+                            <img class="product-item__img" src="http://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8MXx8cHJvZHVjdHx8MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" alt="img">
+                        </span>
+                        <span class="product-item__badges">
+                            <span class="badge badge--hit">Хит</span>
+                            <span class="badge badge--new">Новинка</span>
+                        </span>
+                    </a>
+                    <div class="product-item__bottom">
+                        <a href="#" class="product-item__title">Название товара, очеень длинное название, нужно предусмотреть чтобы не ломалась верстка!</a>
+                        <div class="product-item__prices">
+                            <div class="product-item__price-current">9,30 руб</div>
+                            <div class="product-item__price-old">14,50 руб</div>
+                        </div>
+                        <div class="product-item__buy">
+                            <a href="#" class="btn btn--primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
             
 
             </div>
