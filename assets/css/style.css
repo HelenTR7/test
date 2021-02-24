@@ -1,3 +1,23 @@
+html {
+    color: #000;
+}
+
+.title {
+    color: #000;
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 45px 0 5px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 5px 0 15px;
+}
+
 * {
     box-sizing: content-box;
     /* Основывается на стандартах CSS, при этом свойства width и height
@@ -33,7 +53,8 @@
     background: #fff;
 }
 
-.container > div {
+/* селектор по части класса */
+[class^=test-box] {
     padding: 5px;
     color: #fff;
 }
@@ -74,15 +95,25 @@
 }
 
 /* name/hex(#fffffff)/rgb/rgba/hsl/hsla */
-.test-box__rgba {
+.test-box__color-name {
+    color: red;
+    background: black;
+}
+
+.test-box__color-hex {
+    color: #e6e6e6;
+    background: #000;
+}
+
+.test-box__color-rgba {
     background: rgba(0,0,0,0.7);
 }
 
-.test-box__rgba2 {
+.test-box__color-rgba2 {
     background: rgba(0,0,0,0.5);
 }
 
-.test-box__rgba3 {
+.test-box__color-rgba3 {
     background: rgba(0,0,0,0.2);
 }
 
@@ -113,10 +144,12 @@
 /* Схлопывание margin */
 /* №1 Наложение границ соседей */
 .test-box__collapse1 {
+    color: #000;
     margin:20px 0;
 }
 
 .test-box__collapse2 {
+    color: #000;
     margin:10px 0;
 }
 
