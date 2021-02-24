@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POSITION</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/css_selectors.css">
+    </head>
+    <body>
+
+        <div class="test-box">
+            <div class="container">
+
+                <ul class="text-box__list">
+                    <li>
+                        <a href="index.html">Список страниц</a>
+                    </li>
+                    <li>
+                        <a href="css_base.html">CSS base</a>
+                    </li>
+                    <li>
+                        <a href="position.html">Position + z-index</a>
+                    </li>
+                    <li>
+                        <a href="css_selectors.html">CSS selectors</a>
+                    </li>
+                    <li>
+                        <a href="bem.html">БЭМ методология</a>
+                    </li>
+                    <li>
+                        <a href="flex.html">Flexboxes</a>
+                    </li>
+                </ul>
+
+                <!-- #1 Работа с CSS селекторами -->
+                <div style="color: #000; padding: 0 30px;">
+                    <h2 class="title">#1 Работа с CSS селекторами</h2>
+                    <p class="link"><a href="https://github.com/yoksel/common-words" target="_blank">Шпаргалка по именам классов(или части имени)</a></p>
+                    <p class="link"><a href="https://flukeout.github.io/" target="_blank">Упражнения для тренировки!</a></p>
+                    <p class="subtitle">- простые</p>
+                    <p>div или .class-name или #id-name и т.д.</p>
+                    <p class="link"><a href="https://drive.google.com/file/d/1vGYfV_MmQJdxbt9la32HF7pnbqxzcvPD/view?usp=sharing" target="_blank">Ссылка на презентацию -> 6й слайд</a></p>
+                    <p class="subtitle">- составные (не разделены комбинаторами)</p>
+                    <p>.class-name.class-name2 или div.class-name</p>
+                    <p class="subtitle">- сложные (разделены комбинаторами)</p>
+                    <p class="link"><a href="https://drive.google.com/file/d/1vGYfV_MmQJdxbt9la32HF7pnbqxzcvPD/view?usp=sharing" target="_blank">Ссылка на презентацию -> 4й слайд</a></p>
+                    <p class="subtitle">- список селекторов (перечисление через ",")</p>
+                </div>
+                <p class="title">#3 Вес селекторов</p>
+                <p class="link"><a href="http://css.yoksel.ru/specifity/" target="_blank">Вес селекторов, расширенная статья</a></p>
+            
+                <div style="color: #000; padding: 0 30px;">
+                    <table>
+                        <tr>
+                            <td colspan="2" style="text-align:center;">!important</td>
+                        </tr>
+                        <tr>
+                            <td>style=""</td>
+                            <td>1,0,0,0</td>
+                        </tr>
+                        <tr>
+                            <td>#id</td>
+                            <td>0,1,0,0</td>
+                        </tr>
+                        <tr>
+                            <td>.class_name</td>
+                            <td>0,0,1,0</td>
+                        </tr>
+                        <tr>
+                            <td>[attr=value]</td>
+                            <td>0,0,1,0</td>
+                        </tr>
+                        <tr>
+                            <td>li</td>
+                            <td>0,0,0,1</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>0,0,0,0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p class="title">#4 Псевдоклассы</p>
+                <div style="color: #000; padding: 0 30px;">
+                    <p class="subtitle">"состояния"</p>
+                    <p>:hover</p>
+                    <p>:focus</p>
+                    <p>:visited</p>
+                    <p>:checked</p>
+                    <p>:disabled</p>
+                    <p>и т.д.</p>
+                    <p class="subtitle">"поиск"</p>
+                    <p>:first-child</p>
+                    <p>:first-of-type</p>
+                    <p>:last-child</p>
+                    <p>:nth-child()</p>
+                    <p>:not(X)</p>
+                </div>
+                <p class="title">#5 Псевдоэлементы</p>
+                <p class="subtitle">Важное свойство "content: '';"</p>
+                <div style="color: #000; padding: 0 30px;">
+                    <p>::before</p>
+                    <p>::after</p>
+                </div>
+
+                <p class="title">#6 Список всех псевдоклассов и псевдоэлементов</p>
+                <p class="link"><a target="_blank" href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/Pseudo-classes_and_pseudo-elements">см. таблицу в конце статьи</a></p>
+
+                <p class="title">#7 P.s. тонкости отрисовки страницы</p>
+                <p class="subtitle">например ".class-name p" сначала найдет все "p", а потом выберет из них те что лежат в ".class-name" - замедляет отрисовку.</p>
+                
+
+            </div>
+        </div>
+
+    </body>
+</html>

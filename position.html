@@ -7,6 +7,7 @@
         <title>POSITION</title>
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/position.css">
     </head>
     <body>
 
@@ -21,13 +22,49 @@
                         <a href="css_base.html">CSS base</a>
                     </li>
                     <li>
-                        <a href="position.html">Position</a>
+                        <a href="position.html">Position + z-index</a>
+                    </li>
+                    <li>
+                        <a href="css_selectors.html">CSS selectors</a>
+                    </li>
+                    <li>
+                        <a href="bem.html">БЭМ методология</a>
+                    </li>
+                    <li>
+                        <a href="flex.html">Flexboxes</a>
                     </li>
                 </ul>
 
-                <div class="test-box__sizes">test-box__sizes 150px*50px</div>
-                <div class="test-box__sizes2">test-box__sizes2 100%*50px</div>
-                <div class="test-box__sizes3">test-box__sizes3 100vw*50px</div>
+                <!-- #1 Работа с box-sizing -->
+                <h2 class="title">Position/z-index</h2>
+                <p class="subtitle">z-index работает только для спозиционированных элементов!</p>
+                <p class="subtitle">z-index работает для соседних элементов</p> 
+
+                <div style="position: relative; height: 200vh;">
+                    <div class="test-box__p-relative test-box-z-0">relative (в потоке) + z-index: 0</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-static test-box__p-top test-box__p-left">static (по умолчанию/ в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative test-box__p-right">relative (в потоке) + right: 25px</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-absolute test-box__p-top test-box__p-left test-box-z-1">absolute (выпадает из потока)  + z-index: 1  + top: 25px + left: 25px</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-static test-box__p-top test-box__p-top  test-box-z-5">static (по умолчанию/ в потоке)  + z-index: 5</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative test-box-z-3">relative (в потоке) + z-index: 3</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-fixed test-box__p-right test-box__p-bottom">fixed (выпадает из потока)  + bottom: 25px</div>
+                    <div class="test-box__p-sticky test-box__p-bottom test-box-z-2">sticky (липкий блок) + bottom: 25px + z-index: 2</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                    <div class="test-box__p-relative">relative (в потоке)</div>
+                </div>
                 
                 
 

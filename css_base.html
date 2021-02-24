@@ -7,6 +7,7 @@
         <title>CSS base</title>
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/css_base.css">
     </head>
     <body>
 
@@ -21,59 +22,90 @@
                         <a href="css_base.html">CSS base</a>
                     </li>
                     <li>
-                        <a href="position.html">Position</a>
+                        <a href="position.html">Position + z-index</a>
+                    </li>
+                    <li>
+                        <a href="css_selectors.html">CSS selectors</a>
+                    </li>
+                    <li>
+                        <a href="bem.html">БЭМ методология</a>
+                    </li>
+                    <li>
+                        <a href="flex.html">Flexboxes</a>
                     </li>
                 </ul>
 
+                <!-- #1 Работа с box-sizing -->
+                <h2 class="title">#1 Работа с box-sizing</h2>
+                <p class="subtitle">Работа с box-sizing:content-box(значение по умолчанию в браузере)</p> 
+                <div class="test-box__bs-cb">content-box</div>
+                <p class="subtitle">Работа с box-sizing:border-box(самое часто применяемое на практике!)</p> 
+                <div class="test-box__bs-pb">border-box</div>
+                <p class="subtitle removed">Работа с box-sizing:padding-box(удалено!)</p>  
+                <div class="test-box__bs-bb removed">padding-box</div>
 
-                <h2 class="title">Работа с width/height</h2>
-                <!-- #1 Задание margin/padding -->
-                <p class="subtitle">#1 Пример работы с width/height px</p>    
-                <div class="test-box__sizes">test-box__sizes 150px*50px</div>
-                <p class="subtitle">#2 Пример работы с width/height %</p>   
-                <div class="test-box__sizes2">test-box__sizes2 100%*50px</div>
-                <p class="subtitle">#3 Пример работы с width/height vw</p>   
-                <div class="test-box__sizes3">test-box__sizes3 100vw*50px</div>
-                
-                <h2 class="title">Работа с em</h2>
-                <!-- #1 Задание margin/padding -->
-                <p class="subtitle">#1 Практическое применение em</p>   
+                <!-- #2 Работа с width/height -->
+                <h2 class="title">#2 Работа с width/height</h2>
+                <p class="subtitle">Пример работы с width/height px</p>    
+                <div class="test-box__sizes">300px*50px</div>
+                <p class="subtitle">Пример работы с width/height %</p>   
+                <div class="test-box__sizes2">50%*50px</div>
+                <p class="subtitle">Пример работы с width/height vw</p>   
+                <div class="test-box__sizes3">50vw*50px</div>
+
+                <!-- #3 px rem em % vw vh для текста -->
+                <h2 class="title">#3 px rem em % vw vh для текста</h2>
+                <div style="color: #000; font-size: 20px;"> 
+                    <p style="font-size: 16px;">Текст 12px</p>
+                    <p style="font-size: 2rem;">Текст 2rem (считает от значения в html)</p>
+                    <p style="font-size: 2em;">Текст 2em</p>
+                    <p style="font-size: 300%;">Текст 300% (от родительского элемента)</p>
+                    <p style="font-size: 5vw;">Текст 5vw</p>
+                    <p style="font-size: 5vh;">Текст 5vh</p>
+                </div>
+
+                <!-- #4 Практическое применение em -->
+                <h2 class="title">#4 Практическое применение em</h2>
+                <p class="subtitle">Практическое применение em</p>   
                 <div>
-                    <a href="javascript:;" class="btn">test btn sm</a>
+                    <a href="javascript:;" class="btn">font-size: 16px</a>
                 </div>
                 <div>
-                    <a href="javascript:;" class="btn btn--md">test btn md</a>
+                    <a href="javascript:;" class="btn btn--md">font-size: 2em</a>
                 </div>
 
-                
-                <h2 class="title">Работа с цветом</h2>
-                <!-- #1 Имя цвета -->
-                <p class="subtitle">#1 Пример задания цвета именем цвета</p>
+                <!-- #5 Работа с цветом -->
+                <h2 class="title">#5 Работа с цветом</h2>
+                <p class="subtitle">Пример задания цвета именем цвета</p>
                 <div class="test-box__color-name">test-box__color-name</div>
-                <!-- #2 Номер цвета -->
-                <p class="subtitle">#2 Пример задания цвета по номеру</p>
+                <p class="subtitle">Пример задания цвета по номеру</p>
                 <div class="test-box__color-hex">test-box__color-hex</div>
-                <!-- #3 Прозрачный цвет (rgba) -->
-                <p class="subtitle">#3 Пример задания прозрачного цвета</p>
+                <p class="subtitle">Пример задания прозрачного цвета</p>
                 <div class="test-box__color-rgba">test-box__rgba</div>
                 <div class="test-box__color-rgba2">test-box__rgba2</div>
                 <div class="test-box__color-rgba3">test-box__rgba3</div>
 
-                <h2 class="title">Работа с padding/margin</h2>
-                <!-- #1 Задание margin/padding -->
-                <p class="subtitle">#1 Пример margin</p>
+                <!-- #6 Задание margin/padding/border -->
+                <h2 class="title">#6 Задание margin/padding/border</h2>
+                <p class="subtitle">Пример margin(внешние оступы)</p>
                 <div class="test-box__margin">test-box__margin</div>
-                <p class="subtitle">#2 Пример padding</p>
+                <p class="subtitle">Пример padding(внутренние отступы)</p>
                 <div class="test-box__padding">test-box__padding</div>
+                <p class="subtitle">Пример border(рамка)</p>
+                <p class="link"><a href="http://htmlbook.ru/css/border" target="_blank">дополнительно все свойства #1</a></p>
+                <p class="link"><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">дополнительно все свойства #2</a></p>
+                <div class="test-box__border">1px solid</div>
+                <div class="test-box__border2">5px solid</div>
+                <div class="test-box__border3">dashed</div>
+                <div class="test-box__border4">dotted</div>
 
-                <h2 class="title">Margin</h2>
-                <!-- #1 Наложение границ соседей -->
-                <p class="subtitle">#1 Пример наложения границ соседей</p>
+                <!-- #7 Margin особенности -->
+                <h2 class="title">#7 Margin особенности</h2>
+                <p class="subtitle">Пример наложения границ соседей</p>
                 <h1 class="test-box__collapse1">Заголовок</h1>
                 <p class="test-box__collapse2">Абзац текста</p>
 
-                <!-- #2 Вываливание за родительские границы -->
-                <p class="subtitle">#2 Пример вываливания за родительские границы</p>
+                <p class="subtitle">Пример вываливания за родительские границы</p>
                 <div class="test-box__collapse3">
                     <p>Абзац текста</p>
                     <p>Абзац текста</p>
